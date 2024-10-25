@@ -11,20 +11,33 @@
         <title>Maze Generator!</title>
     </head>
 <body>
-    <div class="grid-drop-container">
+    <div class="drop-container">
         <label for="grid-drop">Select maze size:</label>
         <select name="grid-drop" id="grid-drop">
-            <option value="0">3 x 3</option>
+            <option value="0"> 3 x 3</option>
             <option value="1"> 5 x 5</option>
             <option value="2"> 10 x 10</option>
             <option value="3"> 25 x 25</option>
+            <option value="4"> 40 x 40</option>
         </select>
+        <label for="alg-drop">Algorithm: </label>
+        <select name="alg-drop" id="alg-drop">
+            <option value="0">Randomized Prim's</option>
+            <option value="1">Recursive Backtracking</option>
+            <option value="2">Kruskal's</option>
+        </select>
+        <label for="solve-alg-drop">Solve with: </label>
+        <select name="solve-alg-drop" id="solve-alg-drop">
+            <option value="0">Dijkstra's</option>
+        </select>
+        
     </div>  
     <div class="grid-container" id="grid-container">
     </div>
     <div class="btn-container">
         <button class="run-btn" id="run-btn">Run</button>
         <button class="reset-btn" id="reset-btn">Reset</button>
+        <button class="solve-btn" id="solve-btn">Solve</button>
     </div>
     <script src="Maze.js"></script>
 </body>
