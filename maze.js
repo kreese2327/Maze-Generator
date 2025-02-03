@@ -285,6 +285,8 @@ async function RecursiveBacktrack(path) {
  * Solves the maze with the selected algorithm.
  */
 function SolveMaze() {
+    solve_btn.disabled = true;
+    solve_btn.style.backgroundColor = "rgb(125, 125, 125)";
     if (solve_alg_drop.value == "0") {
         Dijkstras();
     } 
